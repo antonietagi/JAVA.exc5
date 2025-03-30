@@ -1,0 +1,60 @@
+public class Computador {
+    private String numSerie;
+    private Teclado teclado;//coloca a classe como tipo
+    private Mouse mouse;
+    private Monitor monitor;
+    private Gabinete gabinete;
+}
+
+public Computador() {
+
+}
+
+public Computador(String numSerie, Teclado teclado, Mouse mouse, Monitor monitor Gabinete gabinete) {
+    this.numSerie = numSerie;
+    this.teclado = teclado;
+    this.mouse = mouse;
+    this.monitor = monitor;
+    this.gabinete = gabinete;
+}
+
+public void imprimeComputador() {
+    System.out.println("Número de Série: " +numSerie);
+    teclado.imprimeTeclado();
+    mouse.imprimeMouse();
+    monitor.imprimeMonitor();
+    gabinete.imprimeGabinete();
+
+    public void setNumSerie(String numSerie){
+        this.numSerie = numSerie;
+    }
+    public String getNumSerie(){
+        return numSerie;
+    }
+    public void setTeclado(Teclado teclado){
+        this.teclado = teclado;
+    }
+    public Teclado getTeclado(){
+        return teclado;
+    }
+    public void setMouse(Mouse mouse) {
+        this.mouse = mouse;
+    }
+    public Mouse getMouse(){
+        return mouse;
+    }
+    public void setMonitor(){
+        this.monitor = monitor;
+    }
+    public Monitor getMonitor(){
+        return monitor;
+    }
+    public void setGabinete(){
+        this.gabinete = gabinete;
+    }
+    public Gabinete getGabinete(){
+        return gabinete;
+    }
+
+
+}
